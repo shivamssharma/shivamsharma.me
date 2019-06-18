@@ -1,7 +1,7 @@
 module.exports = {
   siteTitle: 'Shivam Sharma',
   siteDescription:
-    'Brittany Chiang is a software engineer based in Boston, MA who specializes in developing (and occasionally designing) exceptional, high-quality websites and applications.',
+    '',
   siteKeywords:
     'Brittany Chiang, Brittany, Chiang, bchiang7, software engineer, front-end engineer, web developer, javascript, northeastern',
   siteUrl: 'https://www.shivamsharma.me',
