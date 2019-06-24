@@ -3,7 +3,7 @@ module.exports = {
   siteDescription:
     '',
   siteKeywords:
-    'Brittany Chiang, Brittany, Chiang, bchiang7, software engineer, front-end engineer, web developer, javascript, northeastern',
+    '',
   siteUrl: 'https://www.shivamsharma.me',
   siteLanguage: 'en_US',
 
