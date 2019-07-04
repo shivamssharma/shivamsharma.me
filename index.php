@@ -6,21 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
 
-    <!-- css globals -->
-    <link rel="stylesheet" href="public/css/bootstrap.min.css">
-    <!-- animate css -->
-    <link rel="stylesheet" type="text/css" href="public/css/animate.min.css">
-
-    <!-- javascripts -->
-    <!-- typed js -->
-    <script src="public/js/typed.js"></script>
-
-    <!-- font awesome -->
-    <script defer src="public/js/all.js"></script>
-
-    <!-- WOW js -->
-    <script type="text/javascript" src="public/js/wow.js"></script>
-
+    <?php 
+     require "public/header.global.html";
+     ?>
 
     <title>Me ❤</title>
     <style type="text/css">
@@ -79,11 +67,6 @@
     		bottom: 0;
     		background-color: rgba(0,0,0,0.7);
     		z-index: 0;
-    		transition: all 0.3s;
-    	}
-    	.fixed .black {
-    		bottom: 135px!important;
-    		transition: all 0.3s;
     	}
     	i {
     		text-align: center;
@@ -153,65 +136,12 @@
 		  .services-icon, .contact-icon {
 		  	font-size: 50px !important;cursor: pointer;
 		  }
-		  /* new css */
-		  .all {
-		  	background-color: #2a2a2a;
-		  	background-image: url('public/images/blacked.png');
-		  	background-repeat: no-repeat;
-		  	background-size: cover;
-		  }
-		  .title {
-		  	font-weight: 700;
-		    letter-spacing: 2px;
-		    margin-bottom: 14px;
-		    text-align: center;
-		    margin-top: 10%;
-		  }
-		  .scd-title {
-		  	font-size: 72px;
-		  	margin-bottom: 22px;
-		  	text-align: center;
-		  }
-		  .separator {
-		  	font-size:10px;
-		    display: inline-block;
-		    margin: 0px 10px;
-		  }
-		  .social-icon {
-		  	font-size: 28px !important;
-		  	margin-right: 25px;
-		  	cursor: pointer;
-		  }
-		  .img-profil-460 {
-		  	z-index: 1;
-		  	position: relative;
-		  	top: 20px;
-		  	border-radius: 5px;
-		  }
-		  .titre {
-		  	position: relative;
-		  	margin-bottom: 45px;
-		  	font-weight: bold;		  	
-		  }
-		  .description-profil {
-		  	position: relative;
-		  	font-size: 14px;
-		  	font-weight: normal;
-		  	line-height: 24px;
-		  	color: #aaaaaa;
-		  	margin-bottom: 50px;
-		  }
-		  .hireMe {
-		  	position: relative;
-		  	margin-right: 25px;
-		  	padding:10px 25px;
-		  }
     </style>
   </head>
   <body>
-    <div class="container-fluid all"> 
+    <div class="container-fluid" style="background-color: #2a2a2a;background-image: url('public/images/close-up-code-coding-160107.jpg');background-repeat: no-repeat;background-size: cover;"> 
+   		<div class="black"></div>
    		<div class="container-fluid header">
-      		<!-- <div class="black"></div> -->
    			<div class="container">
 	   			<div class="row">
 	   				<div class="col-lg-5">
@@ -255,21 +185,26 @@
       <div class="container" style="padding-bottom: 150px;">
 	      <div class="row">
 	      	<div class="col-lg-12">
-	      		<h3 class="title">Hello,</h3>
-	      		<h5 class="scd-title">I'm a Senior Web <span class="element"></span></h5>
-	      		<h6 style="text-align: center;color: #aaaaaa;">
-	      			Designer 
-	      			<span class='separator'>&#9670;</span> developer 
-	      			<span class='separator'>&#9670;</span> photographer
-	      		</h6>
+	      		<h3 style="font-weight: 700;
+							    letter-spacing: 2px;
+							    margin-bottom: 14px;
+							    text-align: center;
+							    margin-top: 10%;
+							    ">Hello,</h3>
+	      		<h5 style="font-size: 72px;margin-bottom: 22px;text-align: center;">I'm a Senior Web <span class="element"></span></h5>
+	      		<h6 style="text-align: center;color: #aaaaaa;">Designer <span style='font-size:10px;font-size: 10px;
+								    display: inline-block;
+								    margin: 0px 10px;'>&#9670;</span> developer <span style='font-size:10px;font-size: 10px;
+								    display: inline-block;
+								    margin: 0px 10px;'>&#9670;</span> photographer</h6>
 	      	</div>
 	      </div>
 	      <div class="row">
 	      	<div class="col-lg-12" style="text-align: center;margin-top: 10%">
-		      		<i class="fab fa-instagram social-icon"></i>
-		      		<i class="fab fa-facebook social-icon"></i> 
-		      		<i class="fab fa-youtube social-icon"></i> 
-		      		<i class="fab fa-linkedin social-icon"></i> 
+		      		<i class="fab fa-instagram" style="font-size: 28px !important;margin-right: 25px;cursor: pointer;"></i>
+		      		<i class="fab fa-facebook" style="font-size: 28px !important;margin-right: 25px;cursor: pointer;"></i> 
+		      		<i class="fab fa-youtube" style="font-size: 28px !important;margin-right: 25px;cursor: pointer;"></i> 
+		      		<i class="fab fa-linkedin" style="font-size: 28px !important;margin-right: 25px;cursor: pointer;"></i> 
 	      	</div>
 	      </div>
       </div>
@@ -279,17 +214,17 @@
 	      <div class="row" style="padding-bottom: 50px">
 	      	<div class="col-lg-6" style="padding: 80px 0px">
 	      		<div class="wrapper-card">
-	      			<img src="https://via.placeholder.com/460x513?text=Yandev" class="img-profil-460">
+	      			<img src="https://via.placeholder.com/460x513?text=Yandev" style="z-index: 1;position: relative;top: 20px;border-radius: 5px;">
 	      			<div class="square"></div>
 	      		</div>
 	      	</div>
 	      	<div class="col-lg-6" style="padding: 150px 0px;">
-	      		<h1 class="titre">About Me</h1>
-	      		<p class="description-profil">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incidiei dunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exeracita aation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+	      		<h1 style="position: relative;margin-bottom: 45px;font-weight: bold;">About Me</h1>
+	      		<p style="position: relative;font-size: 14px;font-weight: normal;line-height: 24px;color: #aaaaaa;margin-bottom: 50px">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incidiei dunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exeracita aation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
 
 						Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
 	      		
-	      		<button class="btn btn-light hireMe">Hire me</button>
+	      		<button class="btn btn-light" style="position: relative;margin-right: 25px;padding:10px 25px">Hire me</button>
 	      		<button type="button" class="btn btn-outline-light" style="padding:10px 25px">Download my CV</button>
 
 	      	</div>
@@ -297,7 +232,7 @@
 	      	<!-- my skills -->
 	      	<!-- my skills -->
 	      	<div class="col-lg-12" style="text-align: center;margin-top: 40px;margin-bottom: 45px;">
-	      		<h1 class="titre">My skills</h1>
+	      		<h1 style="position: relative;margin-bottom: 45px;font-weight: bold;">My skills</h1>
 	      		
 	      		<div class="row">
 	      			<div class="col-lg-6 " style="padding: 25px">
@@ -545,12 +480,9 @@
         	</div>
         </div>
 
-    <!-- footer requirement. -->
-    <script src="public/js/jquery-3.3.1.slim.min.js"></script>
-    <script src="public/js/popper.min.js"></script>
-    <script src="public/js/bootstrap.min.js"></script>
-
-    
+    <?php 
+     require "public/footer.global.html";
+     ?>
      <script type="text/javascript">
      	var typed = new Typed('.element', {
 			  strings: [" Developer.", " Designer."],
