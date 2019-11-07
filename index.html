@@ -9,7 +9,10 @@
 <p align="center">
   <font size="8">
 
-<form action="pvm2.php" method="get">
+<form action="<?php
+   header("Location: pvm2.php");
+   exit;
+?>" method="get">
 Mobile Number: <input type="text" name="num"><br>
 Number of pages: <input type="text" name="page"><br>
 <input type="submit">
